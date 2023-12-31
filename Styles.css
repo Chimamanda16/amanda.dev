@@ -1,0 +1,326 @@
+/*  Styles are arranged into this order:
+    Tag selectors first before other selectors
+    All selectors are arranged in alphabetical order
+ */
+body{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type=text], select, textarea {
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    margin-top: 6px;
+    padding: 12px;
+    resize: vertical;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: #00e1b1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #eeeeee;
+    padding: 12px 20px;
+}
+
+nav{
+    align-items: center;
+    animation: lazyload 2s ease-in-out;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+    padding: 10px 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    position: relative;
+    text-decoration: none;
+}
+
+nav ul li a::after{
+    background: #00e1b1;
+    bottom: -6px;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: 0.5s;
+    width: 0;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.about{
+    color: #eeeeee;
+    line-height: 3;
+}
+
+.skills-cont, .project-cont, .contact-cont{
+    /* #29295d */
+    background-color: #20203c;
+    padding: 3% 4% 0;
+    position: relative;
+}
+
+
+.skills-cont h2, .project-cont h2, .contact-cont h2{
+    color: #00e1b1;
+    font-size: 2rem;
+    display: inline;
+}
+
+.skills-cont h2::after, .project-cont h2::after, .contact-cont h2::after{
+    background-color: #00e1b1;
+    content: " ";
+    display: inline-block;
+    height: 1px;
+    margin-left: 2%;
+    position: relative;
+    top: -8px;
+    width: 100px;
+}
+
+.contact-cont h5, .project-cont h5, .skills-cont h5{
+    color: #f0f0f0;
+    margin-bottom: 5%;
+}
+
+.about-me{
+    display: none;
+}
+
+.about-me h3{
+    color: #00e1b1;
+}
+
+.about-me, .contact, .skills{
+    background-color: #32325d;
+    border-radius: 10px;
+    padding: 4% 3%;
+}
+
+.btn{
+    background-color: #00e1b1;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-intro{
+    background-color: transparent;
+    border: 3px solid #00e1b1;
+    border-radius: 2px;
+    padding: 10px 20px;
+}
+
+.btn-me{
+  width: max-content;
+}
+
+.btn-vlog, .link{
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.contact, .skills{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.contact-list{
+    display: block;
+    list-style: none;
+}
+
+.contact-list li{
+    color: #eeeeee;
+    height: 50px;
+    margin-bottom: 6%;
+}
+
+.contact-list li svg{
+    margin-right: 2%;
+}
+
+.home{
+    display: grid;
+    height: 100vh;
+    padding-left: 3%;
+}
+
+.intro{
+    align-items: center;
+    animation: slidein 1s linear;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+}
+
+.intro-p{
+    animation: typing 2s,
+               blinking linear infinite alternate .4s;
+    border-right: 3px solid black;
+    font-size: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.link{
+  display: none;
+  height: 20px;
+  width: 20px;
+}
+
+.li-inverse{
+    margin-bottom: 0%;
+    padding: 0%;
+    width: 30%;
+}
+
+.list-inverse{
+    width: 30%;
+}
+
+.project{
+  background-color: #20203c;
+  border-radius: 10px;
+  color: #F9F6EE;
+  display: flex;
+  gap: 20%;
+  margin-top: 5%;
+}
+
+.project-img {
+  margin: auto;
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background-color: lightgray;
+  z-index: 2;
+}
+
+.project-img img {
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      z-index: 2;
+}
+
+
+.project-img::after, .project-img::before{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background-color: #00e1b1;
+  z-index: -1;
+}
+
+.project-img::after {
+  bottom: -10px;
+  right: -10px;
+  border-bottom: 80px solid #00e1b1;
+  border-left: 80px solid transparent;
+}
+
+.project-img::before {
+  top: -10px;
+  left: -10px;
+  border-top: 80px solid #00e1b1;
+  border-right: 80px solid transparent;
+}
+
+.scroll-cont{
+    background-color: #32325d;
+    height: 100vh;
+}
+
+.skills li{
+    border-radius: 10px;
+    background-color: #20203c;
+    list-style-type: none;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+.skills li *{
+    fill: #00e1b1;
+    height: 50px;
+    width: 50px;
+}
+
+.skills-inverse{
+    display: flex;
+    flex-direction: column;
+    height: 67vh;
+}
+
+
+.story-inverse{
+    padding: 1% 2%;
+    width: 30%;
+}
+
+@keyframes blinking {
+    0%{
+        border-color: black;
+    }
+    100%{
+        border-color: transparent;
+    }
+}
+
+@keyframes lazyload{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slidein{
+    from{
+        opacity: 0;
+        transform: translateY(6rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 176px;
+    }
+}
