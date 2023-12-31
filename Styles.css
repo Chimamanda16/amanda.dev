@@ -3,6 +3,7 @@
     All selectors are arranged in alphabetical order
  */
 body{
+    background-color: #20203c;
     font-family: "poppins", sans-serif;
     margin: 0;
 }
