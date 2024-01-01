@@ -82,7 +82,6 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-
 .skills-cont h2, .project-cont h2, .contact-cont h2{
     color: #00e1b1;
     font-size: 2rem;
@@ -213,7 +212,7 @@ nav ul li a:hover::after{
   color: #F9F6EE;
   display: flex;
   gap: 20%;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 .project-img {
