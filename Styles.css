@@ -3,7 +3,6 @@
     All selectors are arranged in alphabetical order
  */
 body{
-    background-color: #20203c;
     font-family: "poppins", sans-serif;
     margin: 0;
 }
@@ -282,6 +281,9 @@ nav ul li a:hover::after{
     height: 67vh;
 }
 
+span{
+    color: #eeeeee;
+}
 
 .story-inverse{
     padding: 1% 2%;
