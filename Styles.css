@@ -2,6 +2,9 @@
     Tag selectors first before other selectors
     All selectors are arranged in alphabetical order
  */
+*{
+    margin: 0;
+} 
 body{
     font-family: "poppins", sans-serif;
     margin: 0;
