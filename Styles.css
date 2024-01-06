@@ -70,38 +70,13 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+span{
+    color: #eeeeee;
+}
+
 .about{
     color: #eeeeee;
     line-height: 3;
-}
-
-.skills-cont, .project-cont, .contact-cont{
-    /* #29295d */
-    background-color: #20203c;
-    padding: 3% 4% 0;
-    position: relative;
-}
-
-.skills-cont h2, .project-cont h2, .contact-cont h2{
-    color: #00e1b1;
-    font-size: 2rem;
-    display: inline;
-}
-
-.skills-cont h2::after, .project-cont h2::after, .contact-cont h2::after{
-    background-color: #00e1b1;
-    content: " ";
-    display: inline-block;
-    height: 1px;
-    margin-left: 2%;
-    position: relative;
-    top: -8px;
-    width: 100px;
-}
-
-.contact-cont h5, .project-cont h5, .skills-cont h5{
-    color: #f0f0f0;
-    margin-bottom: 5%;
 }
 
 .about-me{
@@ -149,6 +124,35 @@ nav ul li a:hover::after{
     grid-template-columns: 2fr 2fr;
     gap: 20px;
     overflow: hidden;
+}
+
+.contact-cont,  .project-cont, .skills-cont{
+    /* #29295d */
+    background-color: #20203c;
+    padding: 3% 4% 0;
+    position: relative;
+}
+
+.contact-cont h2, .project-cont h2, .skills-cont h2{
+    color: #00e1b1;
+    font-size: 2rem;
+    display: inline;
+}
+
+.contact-cont h2::after, .project-cont h2::after, .skills-cont h2::after{
+    background-color: #00e1b1;
+    content: " ";
+    display: inline-block;
+    height: 1px;
+    margin-left: 2%;
+    position: relative;
+    top: -8px;
+    width: 100px;
+}
+
+.contact-cont h5, .project-cont h5, .skills-cont h5{
+    color: #f0f0f0;
+    margin-bottom: 5%;
 }
 
 .contact-list{
@@ -231,7 +235,6 @@ nav ul li a:hover::after{
       z-index: 2;
 }
 
-
 .project-img::after, .project-img::before{
   content: '';
   position: absolute;
@@ -278,10 +281,6 @@ nav ul li a:hover::after{
     display: flex;
     flex-direction: column;
     height: 67vh;
-}
-
-span{
-    color: #eeeeee;
 }
 
 .story-inverse{
