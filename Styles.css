@@ -188,6 +188,10 @@ span{
     justify-content: center;
 }
 
+.intro h1, .intro p{
+    margin-bottom: 2%;
+}
+
 .intro-p{
     animation: typing 2s,
                blinking linear infinite alternate .4s;
