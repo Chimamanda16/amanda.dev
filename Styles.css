@@ -4,6 +4,7 @@
  */
 *{
     margin: 0;
+    padding: 0;
 } 
 body{
     font-family: "poppins", sans-serif;
@@ -267,7 +268,7 @@ span{
 
 .scroll-cont{
     background-color: #32325d;
-    height: 100vh;
+    position: fixed;
 }
 
 .skills li{
@@ -332,3 +333,4 @@ span{
         width: 176px;
     }
 }
+
