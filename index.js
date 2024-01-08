@@ -41,14 +41,3 @@ const observer = new IntersectionObserver(function (entries, observer) {
 }, options);
 
 observer.observe(skillSect[0]);
-
-// Adding the story button click animation
-function showStory() {
-    skillSect.css("display", "none");
-    aboutSect.css("animation", "lazyload 2s");
-    aboutSect.css("display", "block");
-};
-function showSkills() {
-    skillSect.css("display", "grid");
-    aboutSect.css("display", "none");
-};
