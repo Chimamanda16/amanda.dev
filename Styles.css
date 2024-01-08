@@ -335,6 +335,10 @@ span a{
         padding: 0;
     }
 
+    .intro{
+        text-align: center;
+    }
+
     .intro h1, .intro p{
         margin-bottom: 4%;
     }
@@ -345,7 +349,7 @@ span a{
     }
 
     .project p{
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .project-img{
