@@ -4,7 +4,6 @@
  */
 *{
     margin: 0;
-    padding: 0;
 } 
 body{
     font-family: "poppins", sans-serif;
@@ -73,7 +72,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-span{
+span a{
     color: #eeeeee;
 }
 
@@ -239,6 +238,7 @@ span{
       display: block;
       height: 100%;
       object-fit: cover;
+      width: -webkit-fill-available;
       z-index: 2;
 }
 
@@ -285,17 +285,6 @@ span{
     width: 50px;
 }
 
-.skills-inverse{
-    display: flex;
-    flex-direction: column;
-    height: 67vh;
-}
-
-.story-inverse{
-    padding: 1% 2%;
-    width: 30%;
-}
-
 @keyframes blinking {
     0%{
         border-color: black;
@@ -336,9 +325,32 @@ span{
 
 @media (max-width: 480px) {
     
+    .contact, .project, .skills{
+        display: block;
+    }
+
     .intro h1, .intro p{
         margin-bottom: 4%;
     }
+
+    .project{
+        background-color: #32325d;
+        padding: 10%;
+    }
+
+    .project-img{
+        margin-bottom: 10%;
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .skills li{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 6% ;
+        height: 7vh;
+    }
+        
 }
 
 @media (max-width: 640px) {
