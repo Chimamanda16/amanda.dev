@@ -324,7 +324,7 @@ span a{
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width:200px) and (max-width: 630px) {
     
     .contact, .project, .skills{
         display: block;
@@ -371,9 +371,6 @@ span a{
         
 }
 
-@media (max-width: 640px) {
-    
-}
 
 @media (max-width: 768px) {
     
@@ -383,6 +380,8 @@ span a{
     
 }
 
-@media (max-width: 1280px) {
-    
+@media (min-width: 1100px) {
+    .project p{
+        font-size: 19px;
+    }
 }
