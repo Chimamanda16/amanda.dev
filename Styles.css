@@ -324,7 +324,23 @@ span a{
     }
 }
 
-@media (min-width:200px) and (max-width: 630px) {
+@media screen and (min-width:200px) and (max-width: 630px) {
+
+    nav{
+        display: block;
+    }
+
+    nav ul li{
+        display: block;
+        padding: 10px;
+    }
+
+    .burger-nav{
+        background: url(images/hamburger.png) no-repeat 98%;
+        display: block;
+        height: 50px;
+        width: 100%;
+    }
     
     .contact, .project, .skills{
         display: block;
@@ -341,6 +357,16 @@ span a{
 
     .intro h1, .intro p{
         margin-bottom: 4%;
+    }
+
+    .nav-ul{
+        height: 0;
+        overflow: hidden;
+    }
+
+    .open{
+        height: auto;
+        padding: 0;
     }
 
     .project{
@@ -369,4 +395,9 @@ span a{
         height: 7vh;
     }
         
+}
+@media screen and (min-width: 1100px) {
+    .project p{
+        font-size: 25px;
+    }
 }

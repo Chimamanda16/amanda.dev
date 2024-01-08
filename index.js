@@ -1,8 +1,10 @@
 // Adding the text with the typing animation on the home page
+const aboutSect = $(".about-me");
+const burger =$(".burger-nav");
 const btnIntro = $(".btn-intro");
 const btnMe = $(".btn-me");
 const btnVlog = $(".btn-vlog");
-const aboutSect = $(".about-me");
+const navItems = $(".nav-ul");
 const skillSect = $(".skills");
 const skillSectList = $(".skills").children();
 const solo = $(".link");
@@ -20,6 +22,18 @@ setTimeout(function () {
   btnIntro.css("opacity", "1");
 }, 3000);
 
+//Hamburger animation
+burger.click(
+  function(){
+    if(navItems.hasClass('open')){
+        navItems.removeClass("open");
+    }
+    else{
+        navItems.addClass("open");
+    } 
+  }  
+);
+
 // Social Icons hover button animation
 btnMe.hover(
   function () {
@@ -31,6 +45,7 @@ btnMe.hover(
     solo.css("display", "none");
   }
 );
+
 // Adding animation to the list items in me section
 skillSectList.css("opacity", "0");
 const observer = new IntersectionObserver(function (entries, observer) {
