@@ -25,12 +25,7 @@ setTimeout(function () {
 //Hamburger animation
 burger.click(
   function(){
-    if(navItems.hasClass('open')){
-        navItems.removeClass("open");
-    }
-    else{
-        navItems.addClass("open");
-    } 
+    navItems.toggleClass("open");
   }  
 );
 
