@@ -207,14 +207,19 @@ span a{
   width: 20px;
 }
 
-.li-inverse{
-    margin-bottom: 0%;
-    padding: 0%;
-    width: 30%;
+.nav-cont{
+    display: flex;
+    align-items: baseline;
+    font-size: 23px;
+    justify-content: space-between;
+    margin-top: 0.5%;
 }
 
-.list-inverse{
-    width: 30%;
+.nav-title{
+    align-items: center;
+    margin-right: 3%;
+    padding: 10px 0;
+    color: #00e1b1;
 }
 
 .project{
@@ -223,47 +228,29 @@ span a{
   color: #F9F6EE;
   display: flex;
   gap: 20%;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 
-.project-img {
-  background-color: lightgray;
-  height: 250px;
-  margin: auto;
-  position: relative;
-  width: 300px;
-  z-index: 2;
+.project-img{
+    background-color: lightgray;
+    border: solid 6px antiquewhite;
+    height: 450px;
+    margin: auto;
+    object-fit: cover;
+    position: relative;
+    width: 45%;
+    z-index: 2;
 }
 
-.project-img img {
+.project-img img{
       display: block;
       height: 100%;
       object-fit: cover;
       width: -webkit-fill-available;
-      z-index: 2;
 }
 
-.project-img::after, .project-img::before{
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 20px;
-  background-color: #00e1b1;
-  z-index: -1;
-}
-
-.project-img::after {
-  bottom: -10px;
-  right: -10px;
-  border-bottom: 80px solid #00e1b1;
-  border-left: 80px solid transparent;
-}
-
-.project-img::before {
-  top: -10px;
-  left: -10px;
-  border-top: 80px solid #00e1b1;
-  border-right: 80px solid transparent;
+.project-img1{
+    margin: 0;
 }
 
 .scroll-cont{
@@ -398,6 +385,6 @@ span a{
 }
 @media screen and (min-width: 1100px) {
     .project p{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
