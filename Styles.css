@@ -223,7 +223,6 @@ span a{
 }
 
 .project{
-  background-color: #20203c;
   border-radius: 10px;
   color: #F9F6EE;
   display: flex;
@@ -236,6 +235,7 @@ span a{
     border: solid 6px antiquewhite;
     height: 450px;
     margin: auto;
+    margin-right: 10%;
     object-fit: cover;
     position: relative;
     width: 45%;
@@ -359,7 +359,6 @@ span a{
     }
 
     .project{
-        background-color: #29295d;
         padding: 10%;
     }
 
