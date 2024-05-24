@@ -193,7 +193,7 @@ span a{
 }
 
 .intro-p{
-    animation: typing 2s,
+    animation: typing 3s,
                blinking linear infinite alternate .4s;
     border-right: 3px solid black;
     font-size: 25px;
@@ -260,8 +260,9 @@ span a{
 }
 
 .skills li{
-    border-radius: 10px;
     background-color: #20203c;
+    border-radius: 10px;
+    box-shadow: 1px 2px #000000;
     list-style-type: none;
     margin-bottom: 2%;
     padding: 2%;
@@ -303,12 +304,13 @@ span a{
 }
 
 @keyframes typing {
-    from{
+    0%{
         width: 0;
     }
-    to{
-        width: 176px;
+    100%{
+        width: 235px;
     }
+
 }
 
 @media screen and (min-width:200px) and (max-width: 630px) {
