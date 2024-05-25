@@ -209,7 +209,7 @@ span a{
 
 .nav-cont{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     font-size: 23px;
     justify-content: space-between;
     margin-top: 0.5%;
