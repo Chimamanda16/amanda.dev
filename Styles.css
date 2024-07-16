@@ -96,6 +96,16 @@ span a{
     padding: 4% 3%;
 }
 
+.awesome-li{
+    align-items: center;
+    display: flex;
+}
+
+.awesome-icon{
+    color: #00e1b1;
+    font-size: 2rem;
+}
+
 .btn{
     background-color: #00e1b1;
     border: none;
