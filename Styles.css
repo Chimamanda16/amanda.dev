@@ -142,7 +142,7 @@ span a{
 .contact-cont,  .project-cont, .skills-cont{
     /* #29295d */
     background-color: #20203c;
-    padding: 3% 4% 0;
+    padding: 3% 4% 3%;
     position: relative;
 }
 
@@ -272,7 +272,6 @@ span a{
 .skills li{
     background-color: #20203c;
     border-radius: 10px;
-    box-shadow: 1px 2px #000000;
     list-style-type: none;
     margin-bottom: 2%;
     padding: 2%;
