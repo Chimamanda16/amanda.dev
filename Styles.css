@@ -115,7 +115,7 @@ span a{
 .btn-intro{
     background-color: transparent;
     border: 3px solid #00e1b1;
-    border-radius: 2px;
+    border-radius: 30px;
     padding: 10px 20px;
 }
 
@@ -217,6 +217,27 @@ span a{
   width: 20px;
 }
 
+.memoji{
+    display: flex;
+    margin-left: 70%;
+    position: absolute;
+    right: 10%;
+    top: 55%;
+}
+
+.memoji-greet{
+    animation: greet 1.5s infinite ease-out;
+    background-color: #eeeeee;
+    border-radius: 16px 16px 16px 0;
+    height: 20px;
+    padding: 8% 16%;
+}
+
+.memoji img{
+    animation: jump 1.9s infinite ease-in-out;
+    width: 200px;
+}
+
 .nav-cont{
     display: flex;
     align-items: center;
@@ -233,11 +254,12 @@ span a{
 }
 
 .project{
-  border-radius: 10px;
-  color: #F9F6EE;
-  display: flex;
-  gap: 20%;
-  margin-top: 5%;
+    border-radius: 10px;
+    color: #F9F6EE;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    margin-top: 5%;
 }
 
 .project-img{
@@ -245,6 +267,7 @@ span a{
     border: solid 6px antiquewhite;
     height: 450px;
     margin: auto;
+    margin-bottom: 3%;
     margin-right: 10%;
     object-fit: cover;
     position: relative;
@@ -260,7 +283,7 @@ span a{
 }
 
 .project-img1{
-    margin: 0;
+    margin-left: 0;
 }
 
 .scroll-cont{
@@ -289,6 +312,30 @@ span a{
     }
     100%{
         border-color: transparent;
+    }
+}
+
+@keyframes greet {
+    0%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes jump{
+    0%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(20px);    
+    }
+    100%{
+        transform: translateX(0px);
     }
 }
 
@@ -322,7 +369,7 @@ span a{
 
 }
 
-@media screen and (min-width:200px) and (max-width: 630px) {
+@media screen and (min-width:200px) and (max-width: 690px) {
 
     nav{
         display: block;
@@ -355,6 +402,15 @@ span a{
 
     .intro h1, .intro p{
         margin-bottom: 4%;
+    }
+
+    .memoji{
+        right: 15%;
+        top: 65%;
+    }
+
+    .memoji img{
+        width: 100px;
     }
 
     .nav-ul{
@@ -393,6 +449,13 @@ span a{
     }
         
 }
+
+@media (max-width: 890px) {
+    .memoji{
+    right: 20%;
+    }
+}
+
 @media screen and (min-width: 1100px) {
     .project p{
         font-size: 20px;

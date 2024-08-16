@@ -20,6 +20,7 @@ setTimeout(function () {
 btnIntro.css("opacity", "0");
 setTimeout(function () {
   btnIntro.css("opacity", "1");
+  $(".intro-p").css("border", "none")
 }, 5500);
 
 //Hamburger animation
