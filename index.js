@@ -34,11 +34,11 @@ burger.click(
 btnMe.hover(
   function () {
     btnVlog.attr("src", "images/vlogger.gif");
-    solo.css("display", "block");
+    solo.css("visibility", "visible");
   },
   function () {
     btnVlog.attr("src", "images/vlogger.png");
-    solo.css("display", "none");
+    solo.css("visibility", "hidden");
   }
 );
 

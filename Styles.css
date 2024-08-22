@@ -4,7 +4,8 @@
  */
 *{
     margin: 0;
-} 
+}
+
 body{
     background-color: #20203c;
     font-family: "poppins", sans-serif;
@@ -189,12 +190,11 @@ span a{
     padding-left: 3%;
 }
 
-.intro{
+.intro, .intro-content{
     align-items: center;
     animation: slidein 1s linear;
     display: flex;
     flex-direction: column;
-    height: 60vh;
     justify-content: center;
 }
 
@@ -212,17 +212,18 @@ span a{
 }
 
 .link{
-  display: none;
   height: 20px;
+  visibility: hidden;
   width: 20px;
+}
+
+.me-btn{
+    align-items: flex-end;
+    display: flex;
 }
 
 .memoji{
     display: flex;
-    margin-left: 70%;
-    position: absolute;
-    right: 10%;
-    top: 55%;
 }
 
 .memoji-greet{
@@ -235,13 +236,14 @@ span a{
 
 .memoji img{
     animation: jump 1.9s infinite ease-in-out;
-    width: 200px;
+    width: 110px;
 }
 
 .nav-cont{
     display: flex;
     align-items: center;
     font-size: 23px;
+    height: 40%;
     justify-content: space-between;
     margin-top: 0.5%;
 }
@@ -288,7 +290,6 @@ span a{
 
 .scroll-cont{
     background-color: #32325d;
-    height: 100vh;
     width: 100%;
 }
 
@@ -377,6 +378,7 @@ span a{
 
     nav ul li{
         display: block;
+        margin-left: -10%;
         padding: 10px;
     }
 
@@ -404,9 +406,13 @@ span a{
         margin-bottom: 4%;
     }
 
+    .li-1{
+        margin-top: 18%;
+    }    
+
     .memoji{
-        right: 15%;
-        top: 65%;
+        right: 1575%;
+        top: 25%;
     }
 
     .memoji img{
@@ -419,6 +425,7 @@ span a{
     }
 
     .open{
+        background-image: none;
         height: auto;
         padding: 0;
     }
