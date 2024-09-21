@@ -398,6 +398,9 @@ span a{
 }
 
 @media screen and (min-width:200px) and (max-width: 690px) {
+    #cursor{
+        display: none;
+    }
 
     nav{
         display: block;
@@ -476,16 +479,23 @@ span a{
 }
 
 @media (max-width: 890px) {
+    #cursor{
+        display: none;
+    }
+
     .hero-img-container{
         display: none;
     }
+
     .hero-title h3, .hero-title h1{
         margin-bottom: 4%;
     }
+
     .home{
         height: 95vh;
         margin-bottom: 8%;
     }
+    
     .intro h1, .intro p {
         margin-bottom: 4%;
     }
