@@ -397,7 +397,7 @@ span a{
 
 }
 
-@media screen and (min-width:200px) and (max-width: 690px) {
+@media screen and (min-width:200px) and (max-width: 890px) {
     #cursor{
         display: none;
     }
@@ -426,10 +426,6 @@ span a{
     .contact-list{
         margin-bottom: 10%;
         padding: 0;
-    }
-
-    .intro{
-        text-align: center;
     }
 
     .intro h1, .intro p{
@@ -475,10 +471,6 @@ span a{
         margin-bottom: 6% ;
         height: 7vh;
     }
-        
-}
-
-@media (max-width: 890px) {
     #cursor{
         display: none;
     }
@@ -495,7 +487,7 @@ span a{
         height: 95vh;
         margin-bottom: 8%;
     }
-    
+
     .intro h1, .intro p {
         margin-bottom: 4%;
     }
