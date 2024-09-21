@@ -479,6 +479,10 @@ span a{
         display: none;
     }
 
+    .hero-text h1{
+        font-size: 2rem;
+    }
+
     .hero-title h3, .hero-title h1{
         margin-bottom: 4%;
     }
