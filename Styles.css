@@ -7,7 +7,8 @@
 }
 
 body{
-    background-color: #20203c;
+    background-color: #0d0c1c;
+    /* cursor: none; */
     font-family: "poppins", sans-serif;
 }
 
@@ -113,13 +114,6 @@ span a{
     border-radius: 5px;
 }
 
-.btn-intro{
-    background-color: transparent;
-    border: 3px solid #00e1b1;
-    border-radius: 30px;
-    padding: 10px 20px;
-}
-
 .btn-me{
   width: max-content;
 }
@@ -142,7 +136,7 @@ span a{
 
 .contact-cont,  .project-cont, .skills-cont{
     /* #29295d */
-    background-color: #20203c;
+    background-color: #0d0c1c;
     padding: 3% 4% 3%;
     position: relative;
 }
@@ -175,7 +169,9 @@ span a{
 }
 
 .contact-list li{
+    align-items: center;
     color: #eeeeee;
+    display: flex;
     height: 50px;
     margin-bottom: 6%;
 }
@@ -184,13 +180,77 @@ span a{
     margin-right: 2%;
 }
 
+#cursor{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+    z-index: 100;
+}
+
+.hero{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%  5%;
+    width: 90%;
+}
+
+.hero-img{
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    height: 420px;
+    justify-content: center;
+    width: 350px;
+}
+
+.hero-text{
+    color: #fff;
+}
+
+.hero-text h3{
+    color: #fff;
+    margin-bottom: 2%;
+}
+
+.hero-text h1{
+    font-size: 2.5rem;
+    color: #00e1b1;
+}
+
+.hero-title h3{
+    align-items: center;
+    display: flex;
+    vertical-align: middle;
+}
+
+.hero-title span{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    font-size: 16px;
+    height: 50px;
+    margin-right: 5px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+    width: 50px;
+}
+
 .home{
+    background-color: #0d0c1c;
     display: grid;
     height: 100vh;
     padding-left: 3%;
 }
 
-.intro, .intro-content{
+.intro{
     align-items: center;
     animation: slidein 1s linear;
     display: flex;
@@ -205,7 +265,6 @@ span a{
 .intro-p{
     animation: typing 3s,
                blinking linear infinite alternate .4s;
-    border-right: 3px solid black;
     font-size: 25px;
     overflow: hidden;
     white-space: nowrap;
@@ -220,23 +279,6 @@ span a{
 .me-btn{
     align-items: flex-end;
     display: flex;
-}
-
-.memoji{
-    display: flex;
-}
-
-.memoji-greet{
-    animation: greet 1.5s infinite ease-out;
-    background-color: #eeeeee;
-    border-radius: 16px 16px 16px 0;
-    height: 20px;
-    padding: 8% 16%;
-}
-
-.memoji img{
-    animation: jump 1.9s infinite ease-in-out;
-    width: 110px;
 }
 
 .nav-cont{
@@ -288,8 +330,17 @@ span a{
     margin-left: 0;
 }
 
+.resume-btn{
+    background-color: transparent;
+    border: 2px solid white;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 6%;
+    padding: 3%;
+}
+
 .scroll-cont{
-    background-color: #32325d;
+    background-color: #0d0c1c;
     width: 100%;
 }
 
@@ -313,30 +364,6 @@ span a{
     }
     100%{
         border-color: transparent;
-    }
-}
-
-@keyframes greet {
-    0%{
-        transform: translateY(0px);
-    }
-    75%{
-        transform: translateY(20px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
-@keyframes jump{
-    0%{
-        transform: translateX(0px);
-    }
-    75%{
-        transform: translateX(20px);    
-    }
-    100%{
-        transform: translateX(0px);
     }
 }
 
@@ -408,15 +435,6 @@ span a{
 
     .li-1{
         margin-top: 18%;
-    }    
-
-    .memoji{
-        right: 1575%;
-        top: 25%;
-    }
-
-    .memoji img{
-        width: 100px;
     }
 
     .nav-ul{
@@ -458,9 +476,20 @@ span a{
 }
 
 @media (max-width: 890px) {
-    .memoji{
-    right: 20%;
+    .hero-img-container{
+        display: none;
     }
+    .hero-title h3, .hero-title h1{
+        margin-bottom: 4%;
+    }
+    .home{
+        height: 95vh;
+        margin-bottom: 8%;
+    }
+    .intro h1, .intro p {
+        margin-bottom: 4%;
+    }
+    
 }
 
 @media screen and (min-width: 1100px) {

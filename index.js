@@ -1,7 +1,7 @@
 // Adding the text with the typing animation on the home page
 const aboutSect = $(".about-me");
 const burger =$(".burger-nav");
-const btnIntro = $(".btn-intro");
+const btnIntro = $(".resume-btn");
 const btnMe = $(".btn-me");
 const btnVlog = $(".btn-vlog");
 const navItems = $(".nav-ul");
@@ -52,3 +52,16 @@ const observer = new IntersectionObserver(function (entries, observer) {
 }, options);
 
 observer.observe(skillSect[0]);
+
+//Custom cursor movement
+document.body.onmousemove = function(e) {
+  if (e.pageX >= window.innerWidth - 90) {
+    console.log("Cursor is at the right edge of the screen");
+  }
+  else{
+    $("#cursor").css({
+      left: e.pageX,
+      top: e.pageY
+    });
+  }
+}
