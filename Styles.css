@@ -319,8 +319,8 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 5% auto;
-  padding: 4% 3%;
-  width: 80%;
+  padding: 4% 6%;
+  width: 95%;
 }
 
 .socials{
@@ -332,6 +332,15 @@ nav {
 
 @media screen and (min-width:200px) and (max-width: 890px) {
   
+  
+  .contact, .project{
+    display: block;
+  }
+
+  .contact{
+    font-size: 16px;
+  }
+
   .contact-cont, .project-cont, .skills-cont{
     background-color: #0d0c1c;
     margin: auto;
@@ -365,11 +374,7 @@ nav {
   }
   
   .project{
-    padding: 10%;
-  }
-
-  .contact, .project{
-    display: block;
+    padding: 0 10%;
   }
 
   .contact-list{
@@ -380,9 +385,10 @@ nav {
   .project p{
     font-size: 15px;
   }
-
+  
   .project-img{
-    width: 100%;
+    height: 250px;
+    width: 85%;
   }
 
   .skills{
