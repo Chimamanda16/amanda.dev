@@ -166,18 +166,15 @@ nav {
 }
 
 .project{
-  background-color: #20203c;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  padding: 2%;
-  width: 28%;
+  border-radius: 10px;
+  color: #F9F6EE;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
+  margin-top: 5%;
 }
 
-.projects{
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
 
 .project-cont, .skills-cont{
   /* #29295d */
@@ -210,25 +207,28 @@ nav {
   margin-bottom: 5%;
 }
 
-
-.project-detail{
-  color: #fff;
-  font-size: 18px;
+.project-img{
+  background-color: transparent;
+  border: solid 6px antiquewhite;
+  height: 450px;
+  margin: auto;
+  margin-bottom: 3%;
+  margin-right: 10%;
+  object-fit: cover;
+  position: relative;
+  width: 45%;
+  z-index: 2;
 }
 
-.project-links{
-  font-size: 20px;
-  margin-bottom: 10%;
-  margin-top: 5%;
+.project-img img{
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: -webkit-fill-available;
 }
 
-.project-skill{
-  display: flex;
-  justify-content: space-around;
-}
-
-.project-skill p{
-  font-size: 16px;
+.project-img1{
+  margin-left: 0;
 }
 
 .resume-btn{
@@ -305,4 +305,20 @@ nav {
     display: block;
   }
 
+  .project p{
+    font-size: 15px;
+  }
+
+  .project-img{
+      margin-bottom: 10%;
+      margin-top: 10%;
+      width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+  .project p{
+      font-size: 20px;
+  }
 }
