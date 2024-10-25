@@ -302,7 +302,7 @@ nav {
   border-radius: 10px;
   list-style-type: none;
   margin-bottom: 2%;
-  padding: 2%;
+  padding: 4% 6%;
 }
 
 .skills li *, .skills-mobile li *{
@@ -319,8 +319,11 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 5% auto;
-  padding: 4% 6%;
   width: 95%;
+}
+
+.skills-mobile li :nth-child(even){
+  margin-right: 4%;
 }
 
 .socials{
