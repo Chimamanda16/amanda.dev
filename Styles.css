@@ -58,7 +58,7 @@ nav {
   padding: 4% 3%;
 }
 
-.contact, .skills{
+.contact, .skills, .skills-mobile{
   color: #f0f0f0;
   display: grid;
   justify-content: space-evenly;
@@ -297,8 +297,7 @@ nav {
   padding: 3%;
 }
 
-
-.skills li{
+.skills li, .skills-mobile li{
   background-color: #20203c;
   border-radius: 10px;
   list-style-type: none;
@@ -306,10 +305,22 @@ nav {
   padding: 2%;
 }
 
-.skills li *{
+.skills li *, .skills-mobile li *{
   fill: #00e1b1;
   height: 50px;
   width: 50px;
+}
+
+.skills-mobile{
+  display: none;
+}
+
+.skills-mobile li{
+  display: flex;
+  justify-content: space-between;
+  margin: 5% auto;
+  padding: 4% 3%;
+  width: 80%;
 }
 
 .socials{
@@ -357,7 +368,7 @@ nav {
     padding: 10%;
   }
 
-  .contact, .project, .skills{
+  .contact, .project{
     display: block;
   }
 
@@ -372,6 +383,14 @@ nav {
 
   .project-img{
     width: 100%;
+  }
+
+  .skills{
+    display: none;
+  }
+
+  .skills-mobile{
+    display: block;
   }
 
 }
