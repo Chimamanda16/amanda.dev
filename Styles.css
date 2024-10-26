@@ -1,4 +1,9 @@
- body,
+/*  Styles are arranged into this order:
+    Tag selectors first before other selectors
+    All selectors are arranged in alphabetical order
+ */
+
+body,
 html {
   margin: 0;
   padding: 0;
@@ -307,8 +312,8 @@ nav {
 
 .skills li *, .skills-mobile li *{
   fill: #00e1b1;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
 .skills-mobile{
@@ -318,12 +323,16 @@ nav {
 .skills-mobile li{
   display: flex;
   justify-content: space-between;
-  margin: 5% auto;
+  margin: 5% auto ;
   width: 95%;
 }
 
 .skills-mobile li :nth-child(even){
-  margin-right: 4%;
+  margin-right: 30px;
+}
+
+.skills-mobile li div{
+  margin-bottom: 20px;
 }
 
 .socials{
@@ -332,10 +341,20 @@ nav {
   margin-top: 10px;
 }
 
+@keyframes slidein{
+    from{
+        opacity: 0;
+        transform: translateY(6rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media screen and (min-width:200px) and (max-width: 890px) {
-  
-  
+
+
   .contact, .project{
     display: block;
   }
@@ -347,9 +366,13 @@ nav {
   .contact-cont, .project-cont, .skills-cont{
     background-color: #0d0c1c;
     margin: auto;
-    padding: 30px;
     position: relative;
-    width: 90%;
+    width: 85%;
+  }
+
+  .contact-list{
+      margin-bottom: 10%;
+      padding: 0;
   }
 
   #cursor{
@@ -358,6 +381,7 @@ nav {
 
   .hero{
     min-height: 55vh;
+    margin-top: 5%;
   }
 
   .hero-img-cont{
@@ -372,26 +396,25 @@ nav {
     margin-bottom: 4%;
   }
 
+  .main{
+    min-height: 90vh;
+  }
+
   .nav-open{
     width: 100%;
   }
-  
+
   .project{
     padding: 0 10%;
-  }
-
-  .contact-list{
-    margin-bottom: 10%;
-    padding: 0;
   }
 
   .project p{
     font-size: 15px;
   }
-  
+
   .project-img{
     height: 250px;
-    width: 85%;
+    width: 95%;
   }
 
   .skills{
@@ -406,6 +429,6 @@ nav {
 
 @media screen and (min-width: 1100px) {
   .project p{
-    font-size: 20px;
+    font-size: 22px;
   }
 }
