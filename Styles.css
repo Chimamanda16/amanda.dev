@@ -354,7 +354,6 @@ nav {
 
 @media screen and (min-width:200px) and (max-width: 890px) {
 
-
   .contact, .project{
     display: block;
   }
@@ -371,8 +370,8 @@ nav {
   }
 
   .contact-list{
-      margin-bottom: 10%;
-      padding: 0;
+    margin-bottom: 10%;
+    padding: 0;
   }
 
   #cursor{
@@ -380,8 +379,8 @@ nav {
   }
 
   .hero{
-    min-height: 55vh;
-    margin-top: 15%;
+    min-height: 50vh;
+    margin-top: 20%;
   }
 
   .hero-img-cont{
@@ -397,7 +396,7 @@ nav {
   }
 
   .main{
-    min-height: 90vh;
+    min-height: 85vh;
   }
 
   .nav-open{
