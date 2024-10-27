@@ -257,7 +257,6 @@ nav {
 .project{
   border-radius: 10px;
   color: #F9F6EE;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 20%;
@@ -267,6 +266,7 @@ nav {
 .project-img{
   background-color: transparent;
   border: solid 6px antiquewhite;
+  cursor: pointer;
   height: 450px;
   margin: auto;
   margin-bottom: 3%;
