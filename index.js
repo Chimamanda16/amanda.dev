@@ -4,8 +4,6 @@ const navItems = $(".nav-items");
 const navUl = $(".nav-ul");
 const skillDesktop = $(".skills-desktop");
 const skillDesktopList = $(".skills-desktop").children();
-const skillMobile = $(".skills-mobile").children();
-const skillMobileList = $(".skills-mobile").children();
 const options = {
     threshold: 0.5,
     rootmargin: "-500px",
@@ -35,20 +33,17 @@ burger.click(
 );
 
 skillDesktopList.css("opacity", "0");
-skillMobileList.css("opacity", "0");
 const observerOne = new IntersectionObserver(function (entries, observer) {
-    if (entries[0].isIntersecting === true) {
-      skillDesktopList.css("opacity", "1");
-      skillDesktopList.css("animation", "slidein 2s");
-    }
-}, options);
-
-const observerTwo = new IntersectionObserver(function (entries, observer) {
-   if (entries[0].isIntersecting === true) {
-     skillMobileList.css("opacity", "1");
-     skillMobileList.css("animation", "slidein 2s");
-   }
+  if (entries[0].isIntersecting === true) {
+    // Add the animation when the element enters the viewport
+    skillDesktopList.css("opacity", "1");
+    skillDesktopList.css("animation", "slidein 2s"); // Apply the animation
+  } else {
+    // Optionally reset opacity or other properties when it leaves
+   console.log("Not intersecting");
+    skillDesktopList.css("opacity", "0");
+    skillDesktopList.css("animation", "none"); // Apply the animation
+  }
 }, options);
 
 observerOne.observe(skillDesktop[0]);
-observerTwo.observe(skillMobile[0]);
