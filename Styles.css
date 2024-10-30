@@ -65,6 +65,7 @@ nav {
   /* #29295d */
   background-color: #0d0c1c;
   margin: auto;
+  margin-bottom: 5%;
   padding: 30px;
   position: relative;
   width: 80%;
@@ -330,6 +331,10 @@ nav {
 .resume-btn{
   border: 2px solid white;
 
+}
+
+.skills-cont{
+  margin-bottom: 5%;
 }
 
 .skills li{
