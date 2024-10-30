@@ -15,25 +15,13 @@ body {
   font-family: "poppins", sans-serif;
 }
 
-input[type=text], select, textarea {
-  background-color: #eeeeee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 16px;
-  margin-top: 6px;
-  padding: 12px;
-  resize: vertical;
-  width: 100%;
-}
-
-input[type=submit] {
-  background-color: #00e1b1;
-  border: none;
-  border-radius: 4px;
-  color: #eeeeee;
+button{
+  background-color: transparent;
   cursor: pointer;
-  padding: 12px 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 4%;
+  padding: 3%;
 }
 
 nav {
@@ -60,6 +48,7 @@ nav {
 .contact{
   background-color: #32325d;
   border-radius: 10px;
+  display: flex;
   padding: 4% 3%;
 }
 
@@ -134,6 +123,52 @@ nav {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
+}
+
+
+.form button{
+  border: 1px solid white; 
+}
+
+.form input, .form textarea{
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  display: block;
+  font-size: 1rem;
+  height: 5rem;
+  outline: none;
+  padding: 0 0 0 5rem;
+  width: 80%;
+}
+
+.form input:nth-of-type(1){
+  background-image: url("images/user.svg");
+  background-repeat: no-repeat;
+  background-position: 3%;
+  background-size: 8%;
+}
+
+.form input:nth-of-type(2){
+  background-image: url("images/message.svg");
+  background-repeat: no-repeat;
+  background-position: 3%;
+  background-size: 8%;
+}
+
+.form input:nth-of-type(3){
+  background-image: url("images/message.svg");
+  background-repeat: no-repeat;
+  background-position: 3%;
+  background-size: 8%;
+}
+
+.form textarea{
+  display: flex;
+  text-align: justify;
+  resize: none;
 }
 
 .hamburger{
@@ -293,13 +328,8 @@ nav {
 }
 
 .resume-btn{
-  background-color: transparent;
   border: 2px solid white;
-  cursor: pointer;
-  color: #fff;
-  font-size: 1.5rem;
-  margin-top: 6%;
-  padding: 3%;
+
 }
 
 .skills li{
