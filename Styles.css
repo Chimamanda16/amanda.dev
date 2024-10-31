@@ -93,29 +93,12 @@ nav {
   margin-bottom: 5%;
 }
 
-.contact-list{
-  display: block;
-  list-style: none;
-}
-
-.contact-list li{
-  align-items: center;
-  color: #eeeeee;
-  display: flex;
-  height: 50px;
-  margin-bottom: 6%;
-}
-
-.contact-list li svg{
-  margin-right: 2%;
-}
-
 #cursor{
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 50%;
   height: 60px;
-  position: fixed;
+  position: relative;
   width: 60px;
   z-index: 100;
 }
