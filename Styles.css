@@ -220,7 +220,7 @@ nav {
 }
 
 .main{
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .nav-items{
@@ -413,6 +413,10 @@ nav {
     width: 85%;
   }
 
+  .contact-cont h5, .project-cont h5, .skills-cont h5{
+    margin-bottom: 10%;
+  }
+
   .contact-list{
     margin-bottom: 10%;
     padding: 0;
@@ -440,7 +444,7 @@ nav {
   }
 
   .main{
-    min-height: 85vh;
+    min-height: 80vh;
   }
 
   .nav-open{
@@ -456,7 +460,7 @@ nav {
   }
 
   .project-img{
-    height: 250px;
+    height: 200px;
     width: 95%;
   }
 
