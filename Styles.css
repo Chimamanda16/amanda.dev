@@ -46,7 +46,6 @@ nav {
 }
 
 .contact{
-  background-color: #32325d;
   border-radius: 10px;
   display: flex;
   padding: 4% 3%;
@@ -108,7 +107,6 @@ nav {
   font-size: 20px;
   font-weight: 400;
 }
-
 
 .form button{
   border: 1px solid white; 
@@ -292,7 +290,7 @@ nav {
   margin-right: 10%;
   object-fit: cover;
   position: relative;
-  width: 48%;
+  width: 53%;
   z-index: 2;
 }
 
@@ -443,6 +441,11 @@ nav {
     margin-bottom: 4%;
   }
 
+  .form input, .form textarea{
+    height: 4rem;
+    width: 75%;
+  }
+
   .main{
     min-height: 80vh;
   }
@@ -461,7 +464,7 @@ nav {
 
   .project-img{
     height: 200px;
-    width: 95%;
+    width: 98%;
   }
 
 }
