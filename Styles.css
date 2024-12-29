@@ -268,25 +268,26 @@ nav {
 }
 
 .project{
-  border-radius: 10px;
+  border: solid 6px antiquewhite;
   color: #F9F6EE;
   display: flex;
   flex-direction: column;
   gap: 20%;
+  margin-right: 4%;
   margin-top: 5%;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .project-img{
   background-color: transparent;
-  border: solid 6px antiquewhite;
   cursor: pointer;
-  height: 450px;
-  margin: auto;
-  margin-bottom: 3%;
-  margin-right: 10%;
+  height: 400px;
   object-fit: cover;
   position: relative;
-  width: 53%;
   z-index: 2;
 }
 
@@ -294,15 +295,8 @@ nav {
   display: block;
   height: 100%;
   object-fit: contain;
+  position: absolute;
   width: -webkit-fill-available;
-}
-
-.project-img1{
-  margin-left: 0;
-}
-
-.project-img2{
-  margin-right: 0;
 }
 
 .resume-btn{
@@ -396,6 +390,10 @@ nav {
   }
 }
 
+@media screen and (min-width:200px){
+
+}
+
 @media screen and (min-width:200px) and (max-width: 890px) {
 
   .contact, .project{
@@ -428,7 +426,7 @@ nav {
 
   .hero{
     min-height: 50vh;
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   .hero-img-cont{
@@ -462,11 +460,6 @@ nav {
 
   .project p{
     font-size: 15px;
-  }
-
-  .project-img{
-    height: 200px;
-    width: 98%;
   }
 
 }
