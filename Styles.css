@@ -45,18 +45,14 @@ nav {
   font-size: 40px;
 }
 
-.contact{
-  border-radius: 10px;
-  display: flex;
-  padding: 4% 3%;
+
+.contact button{
+  padding: 2%;
 }
 
 .contact, .skills{
   color: #f0f0f0;
   display: grid;
-  justify-content: space-evenly;
-  grid-template-columns: 2fr 2fr;
-  gap: 20px;
   overflow: hidden;
 }
 
@@ -97,7 +93,7 @@ nav {
   border: 1px solid #fff;
   border-radius: 50%;
   height: 60px;
-  position: relative;
+  position: absolute;
   width: 60px;
   z-index: 100;
 }
@@ -122,7 +118,7 @@ nav {
   font-size: 1rem;
   height: 5rem;
   outline: none;
-  padding: 0 0 0 5rem;
+  padding: 0 0 0 6rem;
   width: 80%;
 }
 
@@ -272,25 +268,26 @@ nav {
 }
 
 .project{
-  border-radius: 10px;
+  border: solid 6px antiquewhite;
   color: #F9F6EE;
   display: flex;
   flex-direction: column;
   gap: 20%;
+  margin-right: 4%;
   margin-top: 5%;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .project-img{
   background-color: transparent;
-  border: solid 6px antiquewhite;
   cursor: pointer;
-  height: 450px;
-  margin: auto;
-  margin-bottom: 3%;
-  margin-right: 10%;
+  height: 400px;
   object-fit: cover;
   position: relative;
-  width: 53%;
   z-index: 2;
 }
 
@@ -298,20 +295,19 @@ nav {
   display: block;
   height: 100%;
   object-fit: contain;
+  position: absolute;
   width: -webkit-fill-available;
-}
-
-.project-img1{
-  margin-left: 0;
-}
-
-.project-img2{
-  margin-right: 0;
 }
 
 .resume-btn{
   border: 2px solid white;
 
+}
+
+.skills{
+  justify-content: space-evenly;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
 }
 
 .skills-cont{
@@ -361,14 +357,14 @@ nav {
 }
 
 @keyframes slidein{
-    from{
-        opacity: 0;
-        transform: translateY(6rem);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from{
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes floatingup {
@@ -392,6 +388,10 @@ nav {
   100%{
     bottom: 0px;
   }
+}
+
+@media screen and (min-width:200px){
+
 }
 
 @media screen and (min-width:200px) and (max-width: 890px) {
@@ -426,7 +426,7 @@ nav {
 
   .hero{
     min-height: 50vh;
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   .hero-img-cont{
@@ -447,7 +447,7 @@ nav {
   }
 
   .main{
-    min-height: 80vh;
+    min-height: 85vh;
   }
 
   .nav-open{
@@ -462,14 +462,14 @@ nav {
     font-size: 15px;
   }
 
-  .project-img{
-    height: 200px;
-    width: 98%;
-  }
-
 }
 
 @media screen and (min-width: 1100px) {
+  
+  .form input, .form textarea{
+    max-width: 50%;
+  }
+
   .project p{
     font-size: 22px;
   }
