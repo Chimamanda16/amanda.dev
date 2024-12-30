@@ -390,6 +390,42 @@ nav {
   }
 }
 
+@media screen and (min-width:200px) and (max-width: 400px) {
+
+  .project-img{
+    height: 200px;
+    width: 98%;
+  }
+
+}
+
+@media screen and (min-width:400px) and (max-width: 650px) {
+
+  .project-img{
+    height: 300px;
+    width: 98%;
+  }
+
+}
+
+@media screen and (min-width:650px) and (max-width: 890px) {
+
+  .project-img{
+    height: 400px;
+    width: 98%;
+  }
+
+}
+
+@media screen and (min-width:890px) and (max-width: 1000px) {
+
+  .project-img{
+    height: 300px;
+    width: 98%;
+  }
+
+}
+
 @media screen and (min-width:200px) and (max-width: 890px) {
 
   .contact, .project{
@@ -419,6 +455,11 @@ nav {
   #cursor{
     display: none;
   }
+  
+  .form input, .form textarea{
+    height: 4rem;
+    width: 75%;
+  }
 
   .hero{
     min-height: 50vh;
@@ -437,11 +478,6 @@ nav {
     margin-bottom: 4%;
   }
 
-  .form input, .form textarea{
-    height: 4rem;
-    width: 75%;
-  }
-
   .main{
     min-height: 85vh;
   }
@@ -451,12 +487,11 @@ nav {
   }
 
   .project{
-    padding: 0 10%;
+    padding: 0 5%;
   }
 
-  .project-img{
-    height: 200px;
-    width: 98%;
+  .projects{
+    grid-template-columns: auto;
   }
 
   .project p{
