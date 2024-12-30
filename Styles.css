@@ -390,10 +390,6 @@ nav {
   }
 }
 
-@media screen and (min-width:200px){
-
-}
-
 @media screen and (min-width:200px) and (max-width: 890px) {
 
   .contact, .project{
@@ -456,6 +452,11 @@ nav {
 
   .project{
     padding: 0 10%;
+  }
+
+  .project-img{
+    height: 200px;
+    width: 98%;
   }
 
   .project p{
