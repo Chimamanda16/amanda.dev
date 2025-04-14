@@ -118,7 +118,7 @@ nav {
   font-size: 1rem;
   height: 5rem;
   outline: none;
-  padding: 0 0 0 6rem;
+  padding: 0 0 0 4rem;
   width: 80%;
 }
 
@@ -228,6 +228,7 @@ nav {
 .nav-logo{
   color: #00e1b1;
   cursor: pointer;
+  display: flex;
   font-size: 30px;
   font-weight: 700;
 }
