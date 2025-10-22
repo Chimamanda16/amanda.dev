@@ -4,6 +4,7 @@ const navItems = $(".nav-items");
 const navUl = $(".nav-ul");
 const skillDesktop = $(".skills-desktop");
 const skillDesktopList = $(".skills-desktop").children();
+const navLinks = $(".nav-links");
 const options = {
     threshold: 0.5,
     rootmargin: "-500px",
@@ -32,6 +33,14 @@ burger.click(
     }
 );
 
+navLinks.click(
+  function(){
+    console.log("clicked")
+    navItems.toggleClass("nav-open");
+    navUl.toggleClass("nav-ul-display");
+  }
+)
+
 skillDesktopList.css("opacity", "0");
 const observerOne = new IntersectionObserver(function (entries, observer) {
   if (entries[0].isIntersecting === true) {
@@ -40,7 +49,6 @@ const observerOne = new IntersectionObserver(function (entries, observer) {
     skillDesktopList.css("animation", "slidein 2s"); // Apply the animation
   } else {
     // Optionally reset opacity or other properties when it leaves
-   console.log("Not intersecting");
     skillDesktopList.css("opacity", "0");
     skillDesktopList.css("animation", "none"); // Apply the animation
   }
